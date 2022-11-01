@@ -1,0 +1,8 @@
+src/
+node_modules/
+demo
+.babelrc
+package-lock.json
+tsconfig.json
+webpack.config.js
+.gitignore
