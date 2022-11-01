@@ -1,5 +1,5 @@
 {
-  "name": "currency-input",
+  "name": "@penguin3007/currency-input",
   "version": "1.0.0",
   "description": "A simple currency input",
   "main": "dist/bundle.js",
