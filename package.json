@@ -1,9 +1,9 @@
 {
   "name": "@penguin3007/currency-input",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple currency input",
-  "main": "dist/bundle.js",
-  "module": "dist/bundle.js",
+  "main": "dist/currencyInput.min.js",
+  "module": "dist/currencyInput.min.js",
   "scripts": {
     "build": "webpack --mode=production",
     "watch": "webpack --mode=development --watch"
