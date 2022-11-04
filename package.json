@@ -1,12 +1,17 @@
 {
   "name": "@penguin3007/currency-input",
-  "version": "1.0.2",
+  "author": {
+    "name": "Yaroslav Stefaniuk",
+    "email": "stefaniuk3007@gmail.com",
+    "url": "https://github.com/Penguin3007"
+  },
+  "version": "1.0.3",
   "description": "A simple currency input",
   "files": [
-    "dist"
+    "dist/"
   ],
-  "main": "dist/currencyInput.min.js",
-  "module": "dist/currencyInput.min.js",
+  "main": "./dist/currencyInput.min.js",
+  "module": "./dist/currencyInput.min.js",
   "scripts": {
     "build": "webpack --mode=production",
     "watch": "webpack --mode=development --watch"
@@ -16,8 +21,15 @@
     "currency",
     "input"
   ],
-  "author": "Yaroslav Stefaniuk",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Penguin3007/currency-input"
+  },
+  "bugs": {
+    "url": "https://github.com/Penguin3007/currency-input/issues",
+    "email": "stefaniuk3007@gmail.com"
+  },
   "devDependencies": {
     "ts-loader": "^9.4.1",
     "typescript": "^4.8.4",
