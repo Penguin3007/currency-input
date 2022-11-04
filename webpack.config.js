@@ -2,7 +2,9 @@ module.exports = {
   entry: './src/currencyInput.ts',
   output: {
     filename: 'currencyInput.min.js',
-    libraryTarget: 'module'
+    library: {
+      type: 'module'
+    }
   },
   experiments: {
     outputModule: true
