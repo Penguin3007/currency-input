@@ -1,5 +1,6 @@
 module.exports = {
   entry: './src/currencyInput.ts',
+  devtool: 'inline-source-map',
   output: {
     filename: 'currencyInput.min.js',
     library: {
