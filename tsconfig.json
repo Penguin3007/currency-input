@@ -1,12 +1,21 @@
 {
   "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "dist/types",
     "target": "ES2018",
     "module": "ESNext",
     "sourceMap": true,
-    "outDir": "dist/",
+    "outDir": "dist",
     "lib": [
       "ESNext",
       "DOM"
     ]
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "src"
+  ]
 }

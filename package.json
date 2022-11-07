@@ -5,16 +5,25 @@
     "email": "stefaniuk3007@gmail.com",
     "url": "https://github.com/Penguin3007"
   },
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple currency input",
+  "type": "module",
   "files": [
-    "dist/"
+    "./dist/"
   ],
-  "main": "./dist/currencyInput.min.js",
-  "module": "./dist/currencyInput.min.js",
+  "types": "./dist/types/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
-    "build": "webpack --mode=production",
-    "watch": "webpack --mode=development --watch"
+    "build": "rm -fr dist/* && tsc",
+    "watch": "tsc --watch"
   },
   "keywords": [
     "currency-input",
@@ -31,10 +40,6 @@
     "email": "stefaniuk3007@gmail.com"
   },
   "devDependencies": {
-    "ts-loader": "^9.4.1",
-    "typescript": "^4.8.4",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "typescript": "^4.8.4"
   }
 }

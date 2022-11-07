@@ -8,14 +8,14 @@ Built on [Vue Currency Input](https://github.com/dm4t2/vue-currency-input) and T
 ## Guide
 
 To use Currency Input just import component<br/>
-```import { CurrencyInput } from '../dist/currencyInput.min.js';```
+```import { Index } from '../dist/currencyInput.min.js';```
 
 Init class<br/>
 
 ```
 const inputEl = document.getElementById('currency-input')
 
-const currencyInput = new CurrencyInput(inputEl, {
+const currencyInput = new Index(inputEl, {
     options: {
       locale: 'de-DE', //BCP 47 language tag
       currency: 'EUR' //ISO 4217 currency code

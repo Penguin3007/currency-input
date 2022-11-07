@@ -42,7 +42,7 @@ export class CurrencyInput {
 
     setOptions(options: CurrencyInputOptions): void {
         this.init(options)
-        this.applyFixedFractionFormat(this.numberValue, true)
+        this.applyFixedFractionFormat(this.numberValue)
     }
 
     getValue(): CurrencyInputValue {
@@ -118,7 +118,7 @@ export class CurrencyInput {
         return value != null ? Math.min(Math.max(value, this.minValue), this.maxValue) : value
     }
 
-    private applyFixedFractionFormat(number: number | null, forcedChange = false) {
+    private applyFixedFractionFormat(number: number | null) {
         this.format(this.currencyFormat.format(this.validateValueRange(number)))
     }
 
